@@ -1,0 +1,13 @@
+com_merch_links:
+#        link1: Victoria's Secret
+        link1: Kohl's
+        link2: 1-800-Flowers
+        link3: Orbitz
+        link4: Harry & David
+#        link4:
+
+non_com_merch_links:
+        link1: Amazon
+        link2: Papa Johns
+#        link3:
+#        link4:

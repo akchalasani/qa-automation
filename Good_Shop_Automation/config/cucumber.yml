@@ -1,0 +1,37 @@
+
+####### Application Url and html report formatter ##############
+#default: features -x -r support -r features/step_definitions --format html --out log/cucumber.html --format pretty PAGE_URL=https://www.goodsearch.com/
+
+#default: features -x -r support -r features/step_definitions --format html --out log/cucumber.html --format pretty PAGE_URL=https://www.goodsearch.com/goodshop
+
+#default: features -x -r support -r features/step_definitions --format html --out log/cucumber.html --format pretty PAGE_URL=https://www.goodsearch.com/give
+
+#default: features -x -r support -r features/step_definitions --format html --out log/cucumber.html --format pretty PAGE_URL=https://beyonce:blue_ivy@uat.goodsearch.com/goodshop
+#
+#default: features -x -r support -r features/step_definitions --format pretty --format rerun --out log/rerun.txt --format html --out log/cucumber.html --format pretty --format rerun --out log/rerun.txt PAGE_URL=https://beyonce:blue_ivy@uat.goodsearch.com/goodshop
+
+#default: --format rerun --out log/rerun.txt features -x -r support -r features/step_definitions --format html --out log/cucumber.html --format pretty PAGE_URL=https://beyonce:blue_ivy@uat.goodsearch.com/goodshop
+
+#cucumber @tmp/rerun.txt --format pretty features/selenium --require features/selenium/step_definitions --require features/selenium/support
+#selenium: --format pretty --format rerun --out tmp/rerun.txt features/selenium --require features/selenium/stepdefinitions --require features/selenium/support
+# rerun: @tmp/rerun.txt --format pretty features/selenium --require features/selenium/stepdefinitions --require features/selenium/support
+
+
+default: --format rerun --out log/rerun.txt features -x -r support -r features/step_definitions --format pretty --format html --out log/cucumber.html --format pretty PAGE_URL=https://beyonce:blue_ivy@uat.goodsearch.com/goodshop
+#https://www.goodsearch.com/goodshop
+#
+#https://www.goodsearch.com/give
+#
+#uat.goodsearch.com/goodshop
+
+#default: features -x -r support -r features/step_definitions --format pretty --format html --out log/cucumber.html PAGE_URL=https://www.goodsearch.com/goodshop --format pretty --format rerun --out log/rerun.txt features -x -r support -r features/step_definitions rerun: log/rerun.txt features -x -r support -r features/step_definitions
+
+
+#default: features -x -r support -r features/step_definitions --format rerun --out log/rerun.txt PAGE_URL=https://www.goodsearch.com/goodshop
+#rerun: log/rerun.txt features -x -r support -r features/step_definitions
+
+# features -x -r support -r features/step_definitions
+
+
+
+#selenium: --format pretty --format rerun --out tmp/rerun.txt features --require features/step_definitions --require /support rerun: @tmp/rerun.txt --format pretty features --require features/step_definitions --require /support
