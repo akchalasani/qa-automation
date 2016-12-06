@@ -1,6 +1,7 @@
 com_merch_links:
 #        link1: Victoria's Secret
-        link1: Kohl's
+        link1: Harry & David
+#        link1: Kohl's
         link2: 1-800-Flowers
         link3: Orbitz
         link4: Harry & David
@@ -11,3 +12,43 @@ non_com_merch_links:
         link2: Papa Johns
 #        link3:
 #        link4:
+
+
+cause_section_urls:
+        cause_url1: https://www.goodsearch.com/causes                             #Participating nonprofits
+        cause_url2: https://www.goodsearch.com/choosecause                        #Choose a cause
+        cause_url3: https://www.goodsearch.com/spreadtheword                      #Spread the word(Registered-User)
+#       cause_url3: https://www.goodsearch.com/login?return_path=%2Fspreadtheword #Spread the word(Visitor)
+        cause_url4: https://uat.goodsearch.com/causes/new                         #Add a cause(Registered-User)
+#        cause_url4: https://www.goodsearch.com/give                               #Add a cause(Visitor)
+        cause_url5: https://uat.goodsearch.com/causes                             #Participating nonprofits
+        cause_url6: https://uat.goodsearch.com/choosecause                        #Choose a cause
+        cause_url7: https://uat.goodsearch.com/spreadtheword                      #Spread the word(Registered-User)
+#       cause_url7: https://uat.goodsearch.com/login?return_path=%2Fspreadtheword #Spread the word(Visitor)
+        cause_url8: https://uat.goodsearch.com/causes/new                         #Add a cause(Registered-User)
+#       cause_url8: https://uat.goodsearch.com/give                               #Add a cause(Visitor)
+
+
+more_ways_to_raise:
+        raise_url1: https://www.goodsearch.com/mobile                         #Goodshop app
+        raise_url2: https://www.goodsearch.com/fetch                          #Goodshop Fetch
+        raise_url3: https://www.goodsearch.com/                               #Goodsearch
+        raise_url4: https://www.goodsearch.com/travel-deals                   #Travel Deals
+        raise_url5: https://www.goodsearch.com/local                          #Local Deals
+        raise_url6: https://www.goodsearch.com/grocery                        #Grocery Coupons
+
+        raise_url7: https://uat.goodsearch.com/mobile                         #Goodshop app
+        raise_url8: https://uat.goodsearch.com/fetch                          #Goodshop Fetch
+        raise_url9: https://uat.goodsearch.com/                               #Goodsearch
+        raise_url10: https://uat.goodsearch.com/travel-deals                  #Travel Deals
+        raise_url11: https://uat.goodsearch.com/local                         #Local Deals
+        raise_url12: https://uat.goodsearch.com/grocery                       #Grocery Coupons
+
+
+
+
+
+
+
+
+

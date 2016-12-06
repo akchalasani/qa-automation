@@ -2,3 +2,12 @@
 prod:
     user: sudhakar.m@tekinroads.com
     pass: temp@123
+
+
+##########Sign_UP##################
+
+sign_up:
+      fname: test
+      lname: 123
+      uemail: test123@gmail.com
+      upwd: test@123

@@ -7,6 +7,17 @@ module SpecHandler
   element           :email_sign_up,      xpath:".//*[@id='global-masthead']//div[2]/a"
   element           :local_menu,         xpath: ".//div[contains(@class, 'local-deals with-dropdown')]"
   element           :travel_menu,        xpath: ".//div[contains(@class, 'travel-deals with-dropdown')]"
+  element           :grocery_menu,       xpath: ".//div[contains(@class, 'grocery-deals desktop-link')]"
+  element           :goodshop_give,      xpath: ".//div[contains(@class, 'goodshop-give')]"
+
+
+
+  ################ Reusable Definitions for Login Page ##############
+
+
+
+
+
   # div               :breadcrumb,         class: "breadcrumbs"
 
 
@@ -35,19 +46,10 @@ module SpecHandler
   #   Watir::Wait.until {footer_link_raise_element.exists?}
   # end
 
-  # def app_invoke
-  #   ############ Read Browser type from the browser.yml file #########################
-  #   path = File.join __dir__, '../config/browsers.yml'
-  #   puts"path:#{path}"
-  #   browser_type = YAML.load(File.open(path))
-  #   puts"browser:#{browser_type['browser']}"
-  #   @browser = Watir::Browser.new :"#{browser_type['browser']}"
-  #   @browser.cookies.clear
-  #   @browser.window.maximize
-  #   @browser.goto ENV['PAGE_URL']
-  #   @browser.alert.ok if @browser.alert.exists?
-  #   # @browser.driver.manage.timeouts.page_load = 10
-  # end
+# def randum_num
+#   a =  Time.now.strftime('%s') + Time.now.strftime('%m')
+#   $randum_num = a[4..8]
+# end
 
   def click_local_menu
     self.local_menu_element.when_present.click
@@ -55,6 +57,14 @@ module SpecHandler
 
   def click_travel_menu
     self.travel_menu_element.when_present.click
+  end
+
+  def click_grocery_menu
+    self.grocery_menu_element.when_present.click
+  end
+
+  def click_goodshop_give_menu
+    self.goodshop_give_element.when_present.click
   end
 
 
@@ -92,7 +102,7 @@ module SpecHandler
     # @browser.alert.close if @browser.alert.present?
     $new_wind_url = @browser.url.to_s
     # puts"new_tab_title:#{$new_wind_url}"
-    # sleep 5
+    # sleep 10
     @browser.windows.last.use.close
 
     @browser.windows.first.use
