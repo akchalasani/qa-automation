@@ -5,7 +5,7 @@ class LoginPage
 ############ Page Objects ########################
   text_field :user_email, id: 'login_email'
   text_field :password, id: 'login_password'
-  button :login, class: 'login'
+  button :sign_up, class: 'login'
   div :loged_in_user, class: 'nav-user'
 
 ################ Reusable Definitions for Login Page #####
@@ -16,7 +16,7 @@ class LoginPage
   #   user_email = user_name
   #   sleep 2
   #   password = pwd
-  #   login
+  #   sign_up
   #   # self.login_element.when_present.click
   # end
 
@@ -24,7 +24,7 @@ class LoginPage
     user_email_element.when_present
     self.user_email = user_name
     self.password = pwd
-    login
+    sign_up
   end
 
 
